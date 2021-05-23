@@ -1,7 +1,7 @@
-let input = document.querySelectorAll("input[type='password']");
+let input = document.querySelector("input[type='password']");
 let time = setTimeout(() => {
   if (input) {
     clearTimeout(time);
-    input[0].type = "text";
+    input.type = "text";
   }
 }, 1000);
