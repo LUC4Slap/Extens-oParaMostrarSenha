@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "MostraSenha",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
