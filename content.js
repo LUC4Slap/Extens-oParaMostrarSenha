@@ -1,7 +1,9 @@
-let input = document.querySelector("input[type='password']");
+let input = document.querySelectorAll("input[type='password']");
 let time = setTimeout(() => {
   if (input) {
     clearTimeout(time);
-    input.type = "text";
+    input.forEach(val => {
+      val.type = "text";
+    })
   }
 }, 1000);
